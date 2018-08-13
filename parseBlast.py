@@ -1,10 +1,6 @@
 
 
-# NOTE: format requirement: the blast file MUST end with a line that reads "# BLAST processed ..."
-# this will parse (1) a blast output file, and (2) the fixed snps file, and output the best hits with chrom and position, 
-#     but only if there's a good hit, 
-#     and only if there aren't 2 equally best hits,
-#     AND only if it's not on one of the 17 chromosomes and not cp, mt, or that other strange one
+# this will parse (1) a blast output file, and (2) the fixed snps file, and output the best hits with chrom and position
 
 def main():
 

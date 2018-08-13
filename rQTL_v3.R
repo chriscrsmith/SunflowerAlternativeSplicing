@@ -1,11 +1,4 @@
 
-# this is how we get the correct format
-#data = read.table('Dropbox/Kane_lab/Alt_splicing/SNP_analysis/rQTL_v3.txt', header = T, sep = '\t')
-#fpkms = read.table('Dropbox/Alt_splicing_clean_files/FPKM_columns/FPKM_columns_fixed_v2.txt', header = T, sep = '\t')
-#genos = data[,36:1983]
-#df = cbind(fpkms, genos)
-#write.table(df, 'Desktop/temp.txt', sep = '\t', row.names = F, quote = F, na = "")
-
 options(digits=22)
 library(qtl)
 

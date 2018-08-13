@@ -1,11 +1,9 @@
 
 
-# this script differs from the first version, because it will permute positions of QTL regions, instead of spliceosome genes
-# find what proportion contain spliceosome genes, and output that proportion.
 
 # Input:
 # 1. qtl locations, e.g. varExplained_1000perm_08162017_greaterThan1varExp_indepQtl.txt
-# 2. spliceosome gene locations (only for getting the number to permute), e.g. tomatoSpliceosomeGene_homologues.txt
+# 2. spliceosome gene locations (only for getting the number to permute), e.g. tomatoSpliceosomeGene_homologs.txt
 # 3. lg lengths, because the lgs have different lengths, and the probability of a gene falling on each one is therefore different
 
 import sys, random
@@ -39,7 +37,7 @@ QTLsizes.append(size)
 # permute QTL locations
 QTLlocations = [None] * len(QTLsizes)
 for q in range(len(QTLsizes)):
-     # the lg is non random because they are different lengths. Using jerry-rigged (clever!) way to find the lg
+     # the lg is non random because they are different lengths
      randLgNum = random.uniform(0,1) * cumulativeLgLength
      tempList = list(cumulativeLgLengths)
      tempList.append(randLgNum)

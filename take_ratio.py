@@ -1,8 +1,8 @@
 
 
 # this script will take as input an rQTL table, an
-#   output a table after adding 1 to each fpkm score (first 236 columns in the table I have) and 
-#   taking ratio of i1 to i2 for each gene
+#   output a table after adding 1 to each fpkm score 
+#   and taking ratio of i1 to i2 for each gene
 
 
 def main():

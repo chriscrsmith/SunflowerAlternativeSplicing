@@ -2,8 +2,6 @@
 
 
 # this will make bands from a qtl file, and a gene locs file
-# NOTE: for the qtl file, need to give only trans qtl, or else won't be able to output cis regulated genes
-
 
 # e.g. python ../Scripts/makeCircosBands.py ../InterpolateMapPos/lg.ALL.bronze14.path.txt ../InterpolateMapPos/lgLengths.txt ../Clean_gene_lists/Significant/varExplained_1000perm_08162017_greaterThan1varExp_genesAndQtlInfo_transOnly_sameChromOnly_plus1.txt ../Clean_gene_lists/PlacingOntoGenome/sigQvals_pt05_1fpkm_ILR_04062016_cMpositions_plus1.txt ../Clean_gene_lists/Significant/varExplained_1000perm_08162017_greaterThan1varExp_propCis.txt 
 

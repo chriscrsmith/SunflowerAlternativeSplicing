@@ -1,6 +1,5 @@
 
 
-# I think this is the most up to date version of this script
 # filtering genes by ones found in all parents to some degree, that differ in population mean in each isoform in opposite directions
 # and finally outputting proportions of each isoform per parent
 

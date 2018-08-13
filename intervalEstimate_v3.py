@@ -8,16 +8,6 @@
 # 3. Third, I want a list of genes and which qtl are associated with them and their locations and info
 # 4. Fourth, for circos links, the same list as above but only trans qtl
 
-
-
-
-
-
-# (this script will be different than v1- I don't even know if v1 was ever really used- AND V2)
-# this script will take in output from rQTL.R with lod hits within identidied qtl regions, with variance explained
-# and tell us how often the same qtl region affects splicing of multiple genes
-# while we're at it, let's quantify the % explained by cis v trans
-
 # this script will take in
 # 1. list of LOD hits inside QTL regions identidied by rQTL.R
 # 2. splice type file, two cols, first call gene, second call splicing model

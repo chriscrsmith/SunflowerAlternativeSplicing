@@ -7,10 +7,6 @@
 
 
 
-# these lines are required to import a python function:
-# import sys
-# sys.path.insert(0, '/data5/AltSplicing09182015/Scripts/')
-# import interpolateBpPos
 
 
 
@@ -52,13 +48,6 @@ def interpolateBP(chrom, cM, myMap):
 
 
 
-
-
-
-                  # test lines
-#import sys
-#geneticMap = fillGeneticMap(sys.argv[1])
-#print interpolateBP(sys.argv[2], sys.argv[3], geneticMap)
 
 
 

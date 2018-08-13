@@ -1,6 +1,6 @@
 
 
-# this script will be for taking in a tpm table with two* isoforms per gene, and outputting wild and dom proportions
+# this script will be for taking in a tpm table with two isoforms per gene, and outputting wild and dom proportions
 
 import sys, numpy
 
@@ -50,9 +50,7 @@ for gene in geneDict:
         if dmean > wmean:
             dversion[isoNum] = 'd'
         means.append([dmean, wmean])
-    # what's complicated here, is if there is not* a clear domestic isoform
-    # e.g., if both wild and domestic have more* isoform 1, but domestic has a disproportionate increase
-    # so. first check if this happens or not
+
     if dversion == ['d', 'd'] or dversion == ['w', 'w']:
         print "\n\n     there's a gene without a clear domestic isoform\n\n"
         1/0

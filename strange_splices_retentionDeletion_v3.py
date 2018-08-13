@@ -1,14 +1,6 @@
 
-# current version 01052016
 # this version of the script is looking for clear examples of intron retention/deletion in alternative splicing
 # takes as input 1 the filtered fpkm file, 2 the Trinity.fasta, and 3 the output type (1 for list, 2 for visualization)
-
-# messy. Instead, want to:
-# go through filtered_fpkms, once, make collection of genes and isoforms
-#     so, here, want to collect infomation in a certain form: c100002_g1_i1. 
-#     so, gene c100002_g2, with 2 indicies: [0] isoform info c100002_g1_i1, and [1] node info
-# then go through the dom version file to get dom version
-# THEN go through the fasta to get the node info
 
 def main():
 
@@ -17,14 +9,11 @@ def main():
     #open files
     filtered_fpkm_path = sys.argv[1]
     fasta_file_name = sys.argv[2]
-    output_type = int(sys.argv[3]) # e.g. 1 or 2: 1 is a list of good looking genes. 2 attemps to visualize those node alignments
+    output_type = int(sys.argv[3]) 
     filtered_fpkms = open(filtered_fpkm_path, 'r')
     fasta_file = open(fasta_file_name, "r")
 
     # making list of fpkm filtered genes, to help distinguish wild and dom versions
-    # this little bit of code is only necessary for the subsequent section of code, 
-    # but is a little redundant with the gene_dict I think
-    # also need this for determining which isoforms to analyze (e.g. some isoforms don't survive filtering)
     filtered_gene_list = {}
     for line in filtered_fpkms:
         gene = line.strip().split()[0]
@@ -64,7 +53,7 @@ def main():
                     first_and_last_count += 1
 
                     # aligning the introns and looking for intron retetion/deletion
-                    iso1_dict = {} # I think this part is counting the number of times each node occurs
+                    iso1_dict = {} # 
                     for node in nodes1:
                         if node in iso1_dict:
                             iso1_dict[node] += 1
