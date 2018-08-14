@@ -1,6 +1,6 @@
 
 
-# this script will take a fasta file, and a list of contigs to look for, and simply grab those sequences
+# this script will take a fasta file, and a list of contigs to look for, and simply grab those sequences.
 
 def main():
 
